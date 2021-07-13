@@ -1,10 +1,11 @@
 
 import './App.css';
 
+
 import Cristians from "./components/cristians/cristians";
 
 
-let Cristians =[
+let cristians =[
 
     {
         name:'Lusy',
@@ -38,10 +39,8 @@ let Cristians =[
 function App() {
     return (
         <div>
-          <Cristians/>
 
-
-
+            {cristians.map(value => <Cristians item={value}/>)}
 
         </div>
     );
