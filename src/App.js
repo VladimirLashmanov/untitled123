@@ -38,7 +38,7 @@ let cristians =[
 
 function App() {
     return (
-        <div>
+        <div className={'wrap'}>
 
             {cristians.map(value => <Cristians item={value}/>)}
 
