@@ -1,18 +1,23 @@
-export default function Cristians(props) {
-   let {item}=props;
 
+//   let {item}=props;
+// let {name,surname,age,photo,info}=item;
 
+// let {item: {name,surname,age,photo,info}}=props;
+
+     import './Cristians.css';
+
+    export default function Cristians({item: {name,surname,age,photo,info}}) {
 
     return (
         <div>
 
 
 
-            <h2>{item.name} {item.surname}</h2>
+            <h2>{name} {surname}, age-{age}</h2>
 
-            <img src={item.photo} alt=""/>
+            <img src={photo} alt=""/>
 
-                <div>{item.info}</div>
+                <div>{info}</div>
 
 
         </div>
