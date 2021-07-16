@@ -1,8 +1,9 @@
 
 import './App.css';
 
-
 import Cristians from "./components/cristians/cristians";
+import Menu from "./components/menu/Menu";
+import CristiansS from "./components/CristiansS/CristiansS";
 
 
 let cristians =[
@@ -38,9 +39,9 @@ let cristians =[
 
 function App() {
     return (
-        <div className={'wrap'}>
-
-            {cristians.map(value => <Cristians item={value}/>)}
+        <div>
+            <Menu/>
+            <CristiansS items={cristians}/>
 
         </div>
     );
